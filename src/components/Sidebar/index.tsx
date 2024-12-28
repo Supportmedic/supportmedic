@@ -100,7 +100,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
           {/* <!-- Menu Group --> */}
           <div>
             <h3 className="mb-4 ml-4 text-sm font-semibold text-bodydark2">
-              MENU
+              MENU AGENCE SUPPORT MEDIC
             </h3>
 
             <ul className="mb-6 flex flex-col gap-1.5">
@@ -227,9 +227,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   );
                 }}
               </SidebarLinkGroup>
-            
-
-
+          
 
               <SidebarLinkGroup
                 activeCondition={
@@ -253,7 +251,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                         }}
                       >
                         <span><BsHouseAddFill />
-                        </span>Gestion résidences
+                        </span> Gestion résidences
                         <svg
                           className={`absolute right-4 top-1/2 -translate-y-1/2 fill-current ${open && 'rotate-180'
                             }`}
@@ -376,29 +374,29 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                         <ul className="mt-4 mb-5.5 flex flex-col gap-2.5 pl-6">
                           <li>
                             <NavLink
-                              to="/"
+                              to="/tous-les-plannings"
                               className={({ isActive }) =>
                                 'group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ' +
                                 (isActive && '!text-white')
                               }
                             >
                            
-                            <span><BsCalendar2Day />
-                            </span>Tous les plannings
+                            <span>
+                              <BsCalendar2Day />
+                            </span>
+                            Tous les plannings
                             </NavLink>
                           </li>
 
                           <li>
                             <NavLink
-                              to="/"
+                              to="/employees"
                               className={({ isActive }) =>
                                 'group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ' +
                                 (isActive && '!text-white')
                               }
                             >
                             <span><BsFillPeopleFill />
-
-
                             </span>Gérer les employés
                             </NavLink>
                           </li>

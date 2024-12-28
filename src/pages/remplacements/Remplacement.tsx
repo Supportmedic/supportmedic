@@ -3,9 +3,9 @@ import React from 'react'
 function Remplacement() {
   return (
     <div>
-       <div>
-        dfr
-        </div> 
+      <div>
+        remplacement
+      </div>
     </div>
   )
 }

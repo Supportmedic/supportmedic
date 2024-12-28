@@ -22,6 +22,9 @@ import MesHeuresDeTravail from './pages/heuresdetravail/MesHeuresDeTravail';
 import FormulairedeDemandedeConge from './pages/demandesdeconge/FormulairedeDemandedeConge';
 import Remplacement from './pages/remplacements/Remplacement';
 import Mapresence from './pages/presences/Mapresence';
+import Plannings from './pages/plannings/Plannings';
+import TouslesEmployees from './pages/employees/TouslesEmployees';
+import AjouterUnEmploye from './pages/employees/AjouterUnEmploye';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -163,6 +166,16 @@ function App() {
         />
 
         <Route
+          path="/ajouter-un-employe"
+          element={
+            <>
+              <PageTitle title="" />
+              <AjouterUnEmploye />
+            </>
+          }
+        />
+
+        <Route
           path="/remplacement"
           element={
             <>
@@ -178,6 +191,26 @@ function App() {
             <>
               <PageTitle title="" />
               <Mapresence />
+            </>
+          }
+        />
+
+        <Route
+          path="/tous-les-plannings"
+          element={
+            <>
+              <PageTitle title="" />
+              <Plannings />
+            </>
+          }
+        />
+
+        <Route
+          path="/employees"
+          element={
+            <>
+              <PageTitle title="" />
+              <TouslesEmployees />
             </>
           }
         />
